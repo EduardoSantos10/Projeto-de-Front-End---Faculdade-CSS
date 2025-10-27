@@ -11,11 +11,13 @@
     <header>
         <h1>Instituto Futuro Aberto: Transformando Vidas pela Tecnologia</h1>
         <nav>
-            <a href="projetos.html">Nossos Projetos</a>
-            <a href="cadastro.html">Cadastro</a>
+            <a href="#home">Início</a>
+            <a href="#projetos">Nossos Projetos</a>
+            <a href="#cadastro">Cadastro</a>
         </nav>
     </header>
     <main>
+        <main id="app-content"></main>
         <section>
             <h2>Missão e Impacto</h2>
             <p>Criado em 2025 por pessoas que querem mudar o mundo através da educação tecnológica, somos uma organização 
@@ -35,15 +37,17 @@
         </section>
 
         <article class="ImagemLab">
-            <img class="imgLab" src="../Assets/laboratorios de informatica 01.jpg" alt="laboratorio">
+            <img class="imgLab" src="../Assets/img/laboratorios de informatica 01.jpg" alt="laboratorio">
         </article>
     </main><br>
+
+    <form id="cadastroForm" action="/processar-cadastro" method="POST"></form>
     <footer>
         <address>
                 <h2>Fale Conosco</h2>
             <section>
                 (00)187954-065 - Telefone <br>
-                (00)782458-042 - Telefone Fixo 
+                (00)782458-042 - Telefone Fixo
             </section> <br><br>
 
                 
@@ -71,6 +75,9 @@
             </section>
 
     </footer>
-    
+    <script type="module" src="../JS/app.js"></script>
+    <script type="module" src="../JS/router.js"></script>
+    <script type="module" src="../JS/templater.js"></script>
+    <script type="module" src="../JS/validation.js"></script>
 </body>
 </html>
